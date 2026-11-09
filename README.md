@@ -2,12 +2,12 @@
 
 ## Open a new project in VS Code
 
-After cloning the repository created from this template, run the setup command from the project root. [Install uv](https://docs.astral.sh/uv/getting-started/installation/)
+With uv installed, open the cloned project from its root. [Install uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 ```sh
-uv sync --locked && code .
+code .
 ```
 
-`uv sync` creates the local `.venv` using the Python version in `.python-version` and installs the locked dependencies, including `ipykernel`. VS Code uses `.venv` as the default interpreter for the workspace.
+Trust the workspace and allow automatic tasks when prompted. The **Sync Python environment** task creates `.venv` using the Python version in `.python-version` and installs the locked dependencies, including `ipykernel`. If automatic tasks are disabled, run **Tasks: Run Task** → **Sync Python environment**.
 
-In VS Code, install the recommended Python and Jupyter extensions. Open `analysis/0_clean.ipynb`, choose **Select Kernel** → **Python Environments**, and select the interpreter under `.venv`. If VS Code already has another interpreter selected, run **Python: Select Interpreter** and choose the same interpreter.
+Install the recommended Python and Jupyter extensions. Once the task finishes, open `analysis/0_clean.ipynb`, choose **Select Kernel** → **Python Environments**, and select the interpreter under `.venv`. If VS Code already has another interpreter selected, run **Python: Select Interpreter** and choose the same interpreter.
